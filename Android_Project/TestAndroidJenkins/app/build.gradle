@@ -10,6 +10,20 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    signingConfigs{
+        release {
+            storeFile file("../keys/keystore.jks")
+            storePassword "qqqqqq"
+            keyAlias "test"
+            keyPassword "qqqqqq"
+        }
+        debug {
+            storeFile file("../keys/keystore.jks")
+            storePassword "qqqqqq"
+            keyAlias "test"
+            keyPassword "qqqqqq"
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
